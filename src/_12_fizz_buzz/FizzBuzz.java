@@ -20,12 +20,31 @@ package _12_fizz_buzz;
 * Print your results to the console, or using JOptionPane if you like.
 * 
 * If your code is correct, the output will be:
-*  
-* 1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz
+*   buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz
 * 
+* 1 2 fizz 4 buzz fizz 7 8 fizz
 **/
 
 public class FizzBuzz {
+	public static void main(String[] args) {
+		
+		for (int i = 0; i < 21; i++) {
+			if(i%3== 0&&i%5==0) {
+				System.out.println("fizzbuzz");
+			}
+			else if(i%5== 0) {
+				System.out.println("buzz");
+			}
+			else if(i%3== 0) {
+				System.out.println("fizz");
+			}
+			else {
+				System.out.println(i);
+			}
+			
+			
+		}
+	}
 
 }
 
